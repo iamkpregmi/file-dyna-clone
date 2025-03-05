@@ -1,144 +1,73 @@
-@font-face {
-    font-family: roboto;
-    src: url(/font/Roboto-VariableFont_wdth\,wght.ttf);
+#color-list {
+    color: #2a2a2a;
+    color: #fe3f40;
+    color: #03a4ed;
+    color: #ff4d61;
+    color: #222;
+
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: roboto;
-    /* overflow-y: hidden; */
 }
 
-.brand-color {
-    color: #6f5499;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-.brand-color-bg {
-    background-color: #6f5499;
+/* customize font size start*/
+p{
+    font-size: 16px;
 }
 
-.custom-padding {
+h1{
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* customize font size end */
+.c-blue {
+    color: #03a4ed;
+}
+
+.c-red {
+    color: #fe3f40;
+}
+.c-red-new {
+    color: #ff4d61;
+}
+
+.c-red-bg {
+    background-color: #fe3f40;
+}
+
+.section-padding {
     padding-top: 5rem;
 }
 
-.c-font-color {
-    color: #555;
+/* navbar start */
+#navbarNav a:hover{
+    color: #ff4d61;
 }
 
-/* navigation section start */
-.icons-div a{
-    margin: 8px;
-    padding: 12px;
+#contact-btn {
+    border-radius: 20px;
+    padding: 7px 25px;
 }
 
-.navbar-brand {
-    color: #6f5499;
-    &:hover{
-        color: #6f5499;
-    }
+#contact-btn:hover {
+    background-color: #03a4ed;
+    border: 1px solid blue;
 }
+/* navbar end */
 
-#navbarSupportedContent a {
-    color: #6f5499;
-    &:hover {
-        background-color: beige;
-    }
+/* about section start */
+#about-section {
+    background-image: url(/images/about-bg.png);
+    background-repeat: no-repeat;
 }
-
-.navbar-toggler {
-    border: 1px solid purple;
-}
-
-.navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path stroke="purple" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/></svg>');
-}
-
-
-/* navigation section end */
-
-/* hero section start */
-#hero-section-div {
-    height: 650px;
-}
-/* hero section start */
-
-
-/* thems section start */
-
-.thems-list a{
-    text-decoration-color: #555;
-    color: #337ab7;
-}
-/* thems section end */
-
-/* performance section start */
-.performance-icons i {
-    font-size: 100px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.performance-icons i:hover {
-    color: #5c3b92;
-}
-/* performance section end */
-
-
-/* blog section start */
-.blog-body a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-.blog-body small, p {
-    color: #555;
-}
-/* blog section end */
-
-/* contact start here */
-#subscribe-btn:hover {
-    background-color: #5c3b92;
-}
-
-#email:focus {
-    border: 1px solid black;
-}
-
-/* contact start end */
-
-
-/* footer section start */
-#footer-section a{
-    text-decoration: none;
-    color: #c1c1c1;
-    padding: 0px 10px;
-    &:hover{
-        color: #fff;
-    }
-}
-
-#footer-section 
-{
-     background-color: #5c3b92;
-     padding: 50px 0px;
-}
-/* footer section end */
-
-
-/* media query start*/
-@media (max-width: 768px){
-    #email {
-        width: 200px;
-    }
-
-    #hero-section-div {
-        height: 500px;
-    }
-}
-/* media query end */
-
-
+/* about section end */
