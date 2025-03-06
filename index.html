@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +59,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5 class="c-red mb-5">Welcome to Space Dynamic</h5>
+                    <h5 class="c-red mb-5 text-uppercase">Welcome to Space Dynamic</h5>
                     <h1>We Make <span class="c-blue">Digital</span></h1>
                     <h1><span class="c-blue">Ideas</span> & <span class="c-red">SEO</span></h1>
                     <h1>Marketing</h1>
@@ -68,11 +68,10 @@
                         Bootstrap 5 (beta 2). This CSS template is free for you provided by
                     </p>
                     <a href="#" id="hero-link">TemplateMo.</a>
-
-                    <div id="analyze-div" class="mt-3">
+                    <form action="#" method="post" autocomplete="off" id="analyze-div" class="mt-3">
                         <input type="text" id="website-url" placeholder="Your website url" required>
                         <button type="submit" class="btn text-danger bg-white website-url-btn">analyze site</button>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid" src="/images/banner-right-image.png" alt="image not found">
@@ -222,33 +221,34 @@
     <!-- Portfolio section end -->
 
     <!-- blog section start -->
-    <section id="blog-section" class="section-padding">
+    <section id="blog-section" class="section-padding mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2 class="text-center fw-bold">
+                    <h2 class="text-left fw-bold mb-5">
                         Check Out What Is <br>
                         <span class="c-blue">Trending</span> In Our Latest <br>
                         <span class="c-red">News</span>
                     </h2>
-                    <div>
+                    <div class="blog-left-image">
                         <img class="img-fluid" src="/images/big-blog-thumb.jpg" alt="img not found">
                     </div>
-                    <div id="main-info" class="bg-light" style="border: 1px solid red; width: 80%; margin-top: 0px;">
-                        <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
-                        <span><i class="fa-solid fa-users c-red"></i> TemplateMo</span>
-                        <span><i class="fa-solid fa-folder c-red"></i> Branding</span>
-                        <br>
-                        <h5>SEO Agency & Digital Marketing</h5>
-                        <p>
+                    <div id="main-info" class="bg-white">
+                        <p class="ms-3 mt-3">
+                            <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
+                            <span class="ms-3"><i class="fa-solid fa-users c-red"></i> TemplateMo</span>
+                            <span class="ms-3"><i class="fa-solid fa-folder c-red"></i> Branding</span>
+                        </p>
+                        <h5 class="ms-3">SEO Agency & Digital Marketing</h5>
+                        <p class="ms-3">
                             Lorem ipsum dolor sit amet, consectetur and sed <br>
                             doer ket eismod tempor incididunt ut labore et <br>
                             dolore magna...
                         </p>
                     </div>
-                    <a href="#" class="btn btn-primary mt-5">Discover More</a>
+                    <a href="#" class="btn btn-primary mt-5 btn-discover">Discover More</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 blog-imge-section">
                     <div class="row">
                         <div class="col-md-6">
                             &nbsp;
@@ -275,7 +275,7 @@
                         <div class="col-md-6 d-flex flex-column justify-content-center">
                             <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
                             <br>
-                            <h5 class="fw-bold">New Websites & Backlinks</h5>
+                            <h5 class="fw-bold">SEO Analysis & Content Ideas</h5>
                             <p>
                                 Lorem ipsum dolor sit amsecteturii and sed <br>
                                 doer ket eismod...
@@ -305,9 +305,65 @@
     </section>
     <!-- blog section end -->
 
+    <!-- contact section start -->
+    <section id="contact-section" class="section-padding mt-5">
+        <div class="container mt-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-white contact-heading mb-4">
+                        Feel Free To Send Us a Message <br>
+                        About Your Website Needs
+                    </h2>
+                    <p class="text-white contact-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket <br>
+                        eismod tempor incididunt ut labore et dolores
+                    </p>
+                    <span class="text-white fw-bold">For any enquiry, Call Us: </span>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <span class="text-white">010-020-0340</span>
+                </div>
+                <div class="col-md-6 bg-white" id="contact-form-col">
+                    <form action="#" method="post" autocomplete="off" class="pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Name" class="form-control imput-bg-color">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Surename" class="form-control imput-bg-color">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <input type="email" placeholder="Your Email" class="form-control imput-bg-color">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <textarea name="message" id="message" placeholder="Message"
+                                    class="form-control imput-bg-color"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn mt-3 btn-message-send ">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
 
+    <!-- footer section start -->
+    <footer id="footer-section" class="pt-5 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center fw-bold">© Copyright 2021 Space Dynamic Co. All Rights Reserved.</p>
+                    <p class="text-center">Design: <span class="c-red">Hossain Mohammad Russell</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
 
-    <br><br><br><br><br><br><br><br>
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="/js/main.js"></script>
 </body>

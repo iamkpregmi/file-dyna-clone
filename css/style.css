@@ -31,6 +31,7 @@ h2 {
     font-size: 30px;
 }
 
+
 /* customize font size end */
 .c-blue {
     color: #03a4ed;
@@ -103,6 +104,10 @@ h2 {
     margin-left: 15px;
     background-color: #03a4ed;
     border: 0;
+    &:focus,
+    &:focus-visible {
+        outline: inherit;
+    }
 }
 
 .website-url-btn {
@@ -148,3 +153,101 @@ h2 {
 }
 
 /* portfolio end */
+
+
+/* blog section start */
+.blog-left-image img{
+    border-radius: 20px;
+}
+
+#main-info {
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: -115px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.btn-discover {
+    background-color: #03a4ed;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 1px solid #03a4ed;
+    &:hover{
+        background-color: #03a4ed;
+        border: 1px solid #03a4ed;
+        color: #fff;
+    }
+}
+
+.blog-imge-section img{
+    border-radius: 20px;
+}
+
+
+/* blog section end */
+
+/* contact section start */
+#contact-section {
+    background-image: url(/images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+}
+
+.contact-heading {
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+.contact-content {
+    line-height: 2.5rem;
+}
+
+.fa-phone-flip {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #fe3f40;
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+
+
+#contact-form-col {
+    border-radius: 10px;
+}
+
+#contact-form-col form {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imput-bg-color {
+    background-color: #d1f3ff;
+    border-radius: 20px;
+    &:focus {
+        background-color: #d1f3ff;
+    }
+}
+
+#message {
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.btn-message-send {
+    background-color: #03a4ed;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    &:hover{
+        background-color: #fe3f40;
+        color: #fff;
+    }
+}
+/* contact section end */
