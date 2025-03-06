@@ -23,6 +23,8 @@ p{
 
 h1{
     font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -50,6 +52,11 @@ h2 {
 }
 
 /* navbar start */
+
+.navbar-brand span{
+    letter-spacing: 2px;
+}
+
 #navbarNav a:hover{
     color: #ff4d61;
 }
@@ -63,11 +70,81 @@ h2 {
     background-color: #03a4ed;
     border: 1px solid blue;
 }
+
+.navbar-nav a {
+    color: #222;
+    margin: 0.5rem 1rem;
+    font-weight: 450;
+}
 /* navbar end */
+
+
+/* hero section start */
+.hero-info {
+    line-height: 2.1rem;
+}
+
+#hero-link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#analyze-div {
+    margin-top: 1rem;
+    background-color: #03a4ed;
+    border-radius: 50px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#website-url {
+    margin-left: 15px;
+    background-color: #03a4ed;
+    border: 0;
+}
+
+.website-url-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    border-radius: 50px;
+}
+
 
 /* about section start */
 #about-section {
     background-image: url(/images/about-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
 }
+
 /* about section end */
+
+
+/* service section start */
+.service-head {
+    line-height: 2.8rem;
+    font-weight: bold;
+}
+
+.service-info {
+    line-height: 2.6rem;
+    padding-bottom: 2rem;
+}
+
+.progress {
+    height: 6px;
+}
+/* service section end */
+
+/* portfolio start */
+.portfolio-imges {
+    box-shadow: 1px 1px 10px rgb(229, 224, 224);
+    border-radius: 10px;
+    margin: 5px 15px;
+}
+
+/* portfolio end */

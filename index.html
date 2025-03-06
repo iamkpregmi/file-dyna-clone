@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- navbar section start -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand fs-4 fw-bold" href="#">
                 <span class="c-red">FILE</span>
@@ -55,18 +58,23 @@
     <section id="hero-section" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <h5 class="c-red-new">Welcome to Space Dynamic</h5>
+                <div class="col-md-6">
+                    <h5 class="c-red mb-5">Welcome to Space Dynamic</h5>
                     <h1>We Make <span class="c-blue">Digital</span></h1>
-                    <h2><span class="c-blue">Ideas</span> & <span class="c-red">SEO</span></h1>
+                    <h1><span class="c-blue">Ideas</span> & <span class="c-red">SEO</span></h1>
                     <h1>Marketing</h1>
-                    <p>
+                    <p class="mt-5 hero-info">
                         Space Dynamic is a professional looking HTML template using a <br>
                         Bootstrap 5 (beta 2). This CSS template is free for you provided by
                     </p>
-                    <a href="#">TemplateMo.</a>
+                    <a href="#" id="hero-link">TemplateMo.</a>
+
+                    <div id="analyze-div" class="mt-3">
+                        <input type="text" id="website-url" placeholder="Your website url" required>
+                        <button type="submit" class="btn text-danger bg-white website-url-btn">analyze site</button>
+                    </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <img class="img-fluid" src="/images/banner-right-image.png" alt="image not found">
                 </div>
             </div>
@@ -76,20 +84,228 @@
     <!-- hero section end -->
 
     <!-- about section start -->
-     <section id="about-section" class="section-padding" style="height: 600px;">
+    <section id="about-section" class="section-padding mb-5">
         <div class="container about-container">
-            <div class="row">
-                <div class="col-4">
-                    <img class="img-fluid" src="/images/about-left-image.png" alt="img not found" style="margin-bottom: -5rem;">
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="/images/about-left-image.png" alt="img not found"
+                        style="margin-bottom: -5rem;">
                 </div>
                 <div class="col-8">
-                    right div
+                    <div class="row mt-5">
+                        <div class="col-md-6 d-flex">
+                            <div class="about-img">
+                                <img class="img-fluid" src="/images/service-icon-01.png" alt="img not found">
+                            </div>
+                            <div class="about-info ms-lg-4">
+                                <h3 class="text-white">Data Analysis</h3>
+                                <p class="text-white">Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="about-img">
+                                <img class="img-fluid" src="/images/service-icon-02.png" alt="img not found">
+                            </div>
+                            <div class="about-info ms-lg-4">
+                                <h3 class="text-white">Data Reporting</h3>
+                                <p class="text-white">Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6 d-flex">
+                            <div class="about-img">
+                                <img class="img-fluid" src="/images/service-icon-03.png" alt="img not found">
+                            </div>
+                            <div class="about-info ms-lg-4">
+                                <h3 class="text-white">Web Analytics</h3>
+                                <p class="text-white">Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="about-img">
+                                <img class="img-fluid" src="/images/service-icon-04.png" alt="img not found">
+                            </div>
+                            <div class="about-info ms-lg-4">
+                                <h3 class="text-white">SEO Suggestions</h3>
+                                <p class="text-white">Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- about section end -->
-     
+
+    <!-- services section start -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="/images/services-left-image.png" alt="img not found">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-5 service-head">
+                        Grow your website with our <br>
+                        <span class="c-blue">SEO</span> service & <span class="c-red">Project</span> Ideas
+                    </h2>
+                    <p class="mb-3 service-info">
+                        Space Dynamic HTML5 template is free to use for your website projects.
+                        However, you are not permitted to redistribute the template ZIP file on any CSS
+                        template collection websites. Please contact us for more information. Thank you
+                        for your kind cooperation.
+                    </p>
+                    <div class="div-progress-bar-row mt-3 mb-3">
+                        <div class="progress-bar-div d-inline">
+                            <h4 class="d-inline">Website Analysis</h4>
+                            <span class="ms-lg-5 c-blue fw-bold">84%</span>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar c-red-bg" role="progressbar" style="width: 84%" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="div-progress-bar-row mt-4 mb-3">
+                        <div class="progress-bar-div d-inline">
+                            <h4 class="d-inline">SEO Reports</h4>
+                            <span class="ms-lg-5 c-blue fw-bold">88%</span>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar c-red-bg" role="progressbar" style="width: 88%" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="div-progress-bar-row mt-4 mb-3">
+                        <div class="progress-bar-div d-inline">
+                            <h4 class="d-inline">Page Optimizations</h4>
+                            <span class="ms-lg-5 c-blue fw-bold">94%</span>
+                        </div>
+                        <div class="progress mt-2">
+                            <div class="progress-bar c-red-bg" role="progressbar" style="width: 94%;" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- Portfolio section start -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <h2 class="text-center fw-bold">
+                        See What Our Agency <br>
+                        <span class="c-blue">Offers</span> & What We <br>
+                        <span class="c-red">Provide</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col portfolio-imges d-flex justify-content-center">
+                    <img class="img-fluid mt-5 mb-5" src="/images/portfolio-image.png" alt="img not found">
+                </div>
+                <div class="col portfolio-imges d-flex justify-content-center">
+                    <img class="img-fluid mt-5 mb-5" src="/images/portfolio-image.png" alt="img not found">
+                </div>
+                <div class="col portfolio-imges d-flex justify-content-center">
+                    <img class="img-fluid mt-5 mb-5" src="/images/portfolio-image.png" alt="img not found">
+                </div>
+                <div class="col portfolio-imges d-flex justify-content-center">
+                    <img class="img-fluid mt-5 mb-5" src="/images/portfolio-image.png" alt="img not found">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- blog section start -->
+    <section id="blog-section" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center fw-bold">
+                        Check Out What Is <br>
+                        <span class="c-blue">Trending</span> In Our Latest <br>
+                        <span class="c-red">News</span>
+                    </h2>
+                    <div>
+                        <img class="img-fluid" src="/images/big-blog-thumb.jpg" alt="img not found">
+                    </div>
+                    <div id="main-info" class="bg-light" style="border: 1px solid red; width: 80%; margin-top: 0px;">
+                        <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
+                        <span><i class="fa-solid fa-users c-red"></i> TemplateMo</span>
+                        <span><i class="fa-solid fa-folder c-red"></i> Branding</span>
+                        <br>
+                        <h5>SEO Agency & Digital Marketing</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur and sed <br>
+                            doer ket eismod tempor incididunt ut labore et <br>
+                            dolore magna...
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-5">Discover More</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            &nbsp;
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="/images/blog-dec.png" alt="img not found">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
+                            <br>
+                            <h5 class="fw-bold">New Websites & Backlinks</h5>
+                            <p>
+                                Lorem ipsum dolor sit amsecteturii and sed <br>
+                                doer ket eismod...
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="/images/blog-thumb-01.jpg" alt="img not found">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
+                            <br>
+                            <h5 class="fw-bold">New Websites & Backlinks</h5>
+                            <p>
+                                Lorem ipsum dolor sit amsecteturii and sed <br>
+                                doer ket eismod...
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="/images/blog-thumb-01.jpg" alt="img not found">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <span><i class="fa-solid fa-calendar c-red"></i> 24 Mar 2021</span>
+                            <br>
+                            <h5 class="fw-bold">New Websites & Backlinks</h5>
+                            <p>
+                                Lorem ipsum dolor sit amsecteturii and sed <br>
+                                doer ket eismod...
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="/images/blog-thumb-01.jpg" alt="img not found">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end -->
+
+
 
     <br><br><br><br><br><br><br><br>
     <script src="/js/bootstrap.bundle.js"></script>
