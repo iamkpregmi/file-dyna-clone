@@ -321,6 +321,10 @@ h2 {
         margin-left: 60px;
         margin-top: 3rem;
     }
+
+    .about-main-col p {
+        text-align: left;
+    }
     .about-img-div {
         background-color: #ff4d61;
         margin-top: 20px;
@@ -329,13 +333,28 @@ h2 {
         border-radius: 20px;
     }
 
+    .about-img {
+        /* display: flex;
+        justify-items: center; */
+        margin-top: 15px;
+        width: 150px;
+        margin-right: 10px;
+        
+    }
+
+    .about-section-row {
+        margin-left: -50px;
+
+    }
+
+
     .about-second-row {
         position: relative;
         margin-top: 5px !important;
     }
 
-    .about-img {
-        margin-right: 5px;
+    .data-analysis-content {
+        width: 130%;
     }
 
     .about-info h3, p {
@@ -352,6 +371,10 @@ h2 {
 
     .blog-content-div {
         margin-bottom: 3rem;
+    }
+
+    .blog-imge-section img {
+        width: 100%;
     }
 
     #contact-section h2, p {
