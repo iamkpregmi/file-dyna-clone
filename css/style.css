@@ -48,6 +48,10 @@ h2 {
     background-color: #fe3f40;
 }
 
+.c-gray {
+    color: gray;
+}
+
 .section-padding {
     padding-top: 5rem;
 }
@@ -101,9 +105,10 @@ h2 {
 }
 
 #website-url {
-    margin-left: 15px;
+    margin-left: 18px;
     background-color: #03a4ed;
     border: 0;
+    width: 65%;
     &:focus,
     &:focus-visible {
         outline: inherit;
@@ -149,7 +154,35 @@ h2 {
 .portfolio-imges {
     box-shadow: 1px 1px 10px rgb(229, 224, 224);
     border-radius: 10px;
-    margin: 5px 15px;
+}
+
+.hidden-card {
+    visibility: hidden;
+    background-color: #fe3f40;
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: -100px;
+    width: 85%;
+}
+.top-card:hover .hidden-card {
+   visibility: visible; 
+   transform: translateY(-80px);
+    transition: all 0.8s;
+    cursor: pointer;
+
+}
+
+.top-card:hover .visible-card {
+    transform: translateY(50px);
+    transition: all 0.8s;
+}
+
+.top-card:not(:hover) .hidden-card  
+{
+   visibility: hidden; 
+   transform: translateY(50px);
+   transition: all 0.8s;
 }
 
 /* portfolio end */
@@ -251,3 +284,111 @@ h2 {
     }
 }
 /* contact section end */
+
+
+/* media query start */
+@media (max-width: 768px){
+
+    #navbarNav li a{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    #hero-section h5, h1, p, a{
+        text-align: center;
+    }
+
+    #analyze-div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #website-url {
+        width: 50%;
+    }
+
+    .about-main-col {
+        display: inline-block;
+        margin-left: 60px;
+        margin-top: 3rem;
+    }
+    .about-img-div {
+        background-color: #ff4d61;
+        margin-top: 20px;
+        padding-top: 15px;
+        text-align: left;
+        border-radius: 20px;
+    }
+
+    .about-second-row {
+        position: relative;
+        margin-top: 5px !important;
+    }
+
+    .about-img {
+        margin-right: 5px;
+    }
+
+    .about-info h3, p {
+        text-align: left;
+    }
+
+    #blog-section h2{
+        text-align: center;
+    }
+
+    #blog-section p{
+        text-align: left;
+    }
+
+    .blog-content-div {
+        margin-bottom: 3rem;
+    }
+
+    #contact-section h2, p {
+        text-align: center;
+    } 
+
+    .main-info-span {
+       display: block; 
+       margin-top: 5px;
+    }
+
+    .contact-us-info {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-us-info-more {
+        display: block;
+        text-align: center;
+    }
+
+    #services-section h2, p {
+        text-align: center;
+    }
+
+    #fname {
+        margin-bottom: 1rem;
+    }
+
+    #services-section {
+        margin-top: 35rem;
+    }
+
+    #services-section h2{
+        margin-top: 2.5rem;
+    }
+
+    #footer-section {
+        margin-top: 25rem;
+    }
+}
+
+
+@media (max-width: 576px){
+    #footer-section {
+        margin-top: 28rem;
+    }
+}
+/* media query end */
