@@ -56,6 +56,10 @@ h2 {
     padding-top: 5rem;
 }
 
+.active {
+    color: #ff4d61 !important;
+}
+
 /* navbar start */
 
 .navbar-brand span{
@@ -109,11 +113,16 @@ h2 {
     background-color: #03a4ed;
     border: 0;
     width: 65%;
+    color: #fff;
     &:focus,
     &:focus-visible {
         outline: inherit;
     }
 }
+
+#website-url::placeholder {
+    color: #fff;
+  }
 
 .website-url-btn {
     margin-top: 10px;
